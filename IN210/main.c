@@ -11,10 +11,10 @@
 /* A test case that does nothing and succeeds. */
 
 
-// Déclaration du mock
-// void recupAge(int* age){
-//     *age=(int)mock();
-// }
+Déclaration du mock
+void recupAge(int* age){
+    *age=(int)mock();
+}
 
 static int setup(void **state) {
     (void) state;
