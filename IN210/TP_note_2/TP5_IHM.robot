@@ -4,6 +4,8 @@ Test Setup  Ouvrir Prestashop
 Test Teardown  Fermer Prestashop 
 
 *** Variables ***
+${Moteur_Recherche}  edge
+
 ${Cat_Vetements}  //*[@id="category-3"]/a
 ${Cat_Homme}  //*[@id="category-4"]/a
 ${Cat_Femme}  //*[@id="category-5"]/a
@@ -24,7 +26,7 @@ test2
 
 *** Keywords ***
 Ouvrir Prestashop
-  Open Browser  http://www.qualifiez.fr/monPrestashop2/prestashop/index.php  edge
+  Open Browser  http://www.qualifiez.fr/monPrestashop2/prestashop/index.php  ${Moteur_Recherche}
   Title Should Be  monPrestashop
   Maximize Browser Window
 
