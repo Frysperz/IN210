@@ -34,7 +34,7 @@ Cliquer Video
   [Arguments]  ${recherche}
   Wait Until Element Is Visible  ${Titre_Video}
   Element Should Contain  ${Titre_Video}  ${recherche}
-  Mouse Over ${Titre_Video}
+  Mouse Over  ${Titre_Video}
   Mouse Down  ${Titre_Video}
   Mouse Up  ${Titre_Video}
 Passer pub 
