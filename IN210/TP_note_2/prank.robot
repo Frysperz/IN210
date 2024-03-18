@@ -4,6 +4,8 @@ Test Setup  Ouvrir Youtube
 Test Teardown  Fermer Youtube
 
 *** Variables ***
+${Moteur_Recherche}  edge
+
 ${Barre_recherche}  xpath=/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox/form/div[1]/div[1]/input
 ${Titre_Video}  xpath=//*[@id="video-title"]/yt-formatted-string
 ${Bouton_Pub}  xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div/ytd-player/div/div/div[20]/div/div[3]/div/div[2]/span/button/div
@@ -18,7 +20,7 @@ prank
   
 *** Keywords ***
 Ouvrir Youtube
-  Open Browser  https://www.youtube.com  edge
+  Open Browser  https://www.youtube.com  ${Moteur_Recherche}
   Title Should Be  YouTube
   Maximize Browser Window
 
