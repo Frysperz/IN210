@@ -19,3 +19,7 @@ L'intérêt des mots-clés est d'automatiser le code. En effet si l'on ne les ut
 ## Question 5 
 
 On utilise une approche de test par les keywords. En effet notre code est séparé en deux parties : notre partie exécution contenant les tests et notre partie création de tests contenant les différents keywords permettant la création des différents tests.
+
+## Remarque
+
+Nous n'avons pas eu besoin de télécharger et ajouter le driver car nous utilisons microsoft edge en moteur de recherche. Si vous voulez tester notre code sur un moteur de recherche différent type chrome ou firefox, il faudra d'abord changer le moteur de recherche dans la variable @{Moteur_Recherche} et il vous faudra donc peut-être installer vous-même le driver le cas échéant.
